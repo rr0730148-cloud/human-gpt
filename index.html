@@ -8,6 +8,45 @@
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -10%,#292c20 0%,var(--bg) 48%);color:var(--text);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh;padding:28px 16px;display:flex;justify-content:center}
 main{width:100%;max-width:720px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:36px}.brand{font-weight:800;letter-spacing:-.06em;font-size:18px}.brand span{color:var(--accent)}.tiny{font-size:12px;color:var(--muted)}
 h1{font-size:clamp(42px,9vw,70px);letter-spacing:-.075em;line-height:.95;margin:0 0 14px;font-weight:850}.lead{color:#b6b5ae;max-width:490px;margin:0 0 28px;font-size:16px}.card{background:linear-gradient(145deg,#1c1c1c,#151515);border:1px solid var(--line);border-radius:22px;padding:22px;margin:16px 0;box-shadow:0 20px 60px #0003}.eyebrow{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:800;margin-bottom:12px}label{display:block;font-size:12px;color:var(--muted);margin:14px 0 6px}input,textarea{width:100%;border:1px solid #383838;border-radius:12px;background:#101010;color:var(--text);padding:13px 14px;font:inherit;outline:none}input:focus,textarea:focus{border-color:var(--accent)}textarea{min-height:112px;resize:vertical}button{border:0;border-radius:12px;padding:13px 17px;background:var(--accent);color:var(--accentText);font-weight:800;font:inherit;cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}.secondary{background:#292929;color:var(--text);border:1px solid #3b3b3b}.linkbtn{background:none;color:var(--muted);padding:6px 0;text-decoration:underline;text-underline-offset:3px}.row{display:flex;gap:10px;align-items:center}.row>*{flex:1}.status{font-size:13px;color:var(--muted);min-height:20px;margin-top:10px}.status.error{color:var(--red)}.status.ok{color:var(--accent)}.hidden{display:none!important}.chatbox{height:min(54vh,520px);overflow:auto;border:1px solid var(--line);border-radius:16px;padding:14px;background:#101010;margin:14px 0}.bubble{max-width:86%;padding:11px 13px;border-radius:15px;margin:9px 0;white-space:pre-wrap;overflow-wrap:anywhere}.bubble.visitor{background:#272727;border:1px solid #383838}.bubble.owner{background:#d4f58c;color:#18200c;margin-left:auto}.meta{font-size:10px;color:var(--muted);margin:0 4px}.bubble.owner+.meta{text-align:right}.chatlist{display:grid;gap:8px;margin:12px 0}.chatitem{background:#111;border:1px solid var(--line);border-radius:12px;padding:12px;text-align:left;color:var(--text);width:100%}.chatitem.active{border-color:var(--accent)}.chatitem small{display:block;color:var(--muted);font-weight:400}.foot{color:#74736d;font-size:11px;margin:24px 4px 0}.pill{font-size:11px;border:1px solid #424242;border-radius:999px;padding:4px 8px;color:var(--muted)}
+ 
+/* Human GPT — warmer, more welcoming front door */
+body{padding:24px 20px;background:radial-gradient(ellipse at 18% 8%,#29351c 0%,transparent 34%),radial-gradient(ellipse at 88% 35%,#1b2920 0%,transparent 32%),#10110f}
+main{max-width:1040px}
+.top{margin-bottom:54px}
+.brand{font-size:19px;letter-spacing:-.07em}
+.top .pill{border-color:#46543a;color:#c5d69f;background:#1a2115;padding:7px 12px}
+#home{position:relative}
+.welcome{display:grid;grid-template-columns:1.08fr .92fr;gap:30px;align-items:center}
+.hero{padding:22px 0 34px}
+.hero .eyebrow{display:flex;align-items:center;gap:9px}
+.hero .eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 14px #c5f36b}
+h1{font-size:clamp(54px,8vw,88px);line-height:.91;letter-spacing:-.085em;margin:10px 0 22px}
+h1 .green{color:var(--accent)}
+.lead{font-size:17px;line-height:1.75;max-width:440px;color:#c1c2b8;margin-bottom:24px}
+.promise{display:flex;gap:10px;align-items:center;color:#aeb3a3;font-size:12px;margin-top:22px}
+.promise .dot{width:5px;height:5px;border-radius:50%;background:#7e8f5d}
+.welcome .card{margin:0;padding:26px;background:linear-gradient(150deg,#20251b,#171a15 70%);border-color:#3b4630;border-radius:26px;box-shadow:0 24px 80px #0005}
+.card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px}
+.card-head .eyebrow{margin:0}
+.card-note{font-size:12px;color:#a3a99a;line-height:1.5;margin:-6px 0 18px}
+.starters{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 17px}
+.starter{border:1px solid #424a38;background:#22271d;color:#d4dbc9;border-radius:999px;padding:8px 11px;font-size:12px;line-height:1.2;cursor:pointer;transition:.18s}
+.starter:hover,.starter:focus{border-color:var(--accent);color:var(--accent);background:#2a321f}
+.welcome input,.welcome textarea{background:#11140f;border-color:#3c4435;border-radius:13px}
+.welcome input:focus,.welcome textarea:focus{box-shadow:0 0 0 3px #c5f36b18}
+.welcome textarea{min-height:118px}
+#startBtn{margin-top:14px;min-height:50px;box-shadow:0 8px 25px #c5f36b18}
+#startBtn:hover{filter:brightness(1.07);transform:translateY(-1px)}
+#visitorCard{max-width:760px;margin:28px auto}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px}
+.why article{border:1px solid #2c3228;background:#171a15a8;border-radius:16px;padding:16px}
+.why b{display:block;color:#e8eadf;font-size:13px;margin-bottom:5px}
+.why span{display:block;color:#9da294;font-size:12px;line-height:1.55}
+.why .symbol{color:var(--accent);font-size:17px;margin-bottom:8px}
+.foot{max-width:720px;margin:35px auto 0;color:#818579;line-height:1.7}
+button{transition:transform .16s,filter .16s}
+@media(max-width:760px){.welcome{grid-template-columns:1fr;gap:16px}.hero{padding:4px 0 0}.top{margin-bottom:34px}h1{font-size:clamp(54px,13vw,76px)}.welcome .card{padding:21px}.why{grid-template-columns:1fr;gap:8px}.why article{display:flex;gap:12px;align-items:flex-start}.why .symbol{margin:0;min-width:20px}}
+
 @media(max-width:540px){body{padding:18px 12px}.card{padding:17px;border-radius:18px}.top{margin-bottom:28px}.row.stack{flex-direction:column}.row.stack>*{width:100%}}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.95.0"></script>
@@ -15,11 +54,36 @@ h1{font-size:clamp(42px,9vw,70px);letter-spacing:-.075em;line-height:.95;margin:
 <body><main>
 <header class="top"><div class="brand">HUMAN<span>·</span>GPT</div><div class="row" style="flex:0;gap:14px"><span class="pill">real person · no AI</span><button class="linkbtn" id="ownerOpen">owner</button></div></header>
 <section id="home">
-  <div class="eyebrow">A little corner of the internet</div><h1>Talk to a<br>human.</h1><p class="lead">No bot pretending to understand. Leave a message, and Rashed will reply when he's around.</p>
-  <div id="startCard" class="card"><div class="eyebrow">Start a conversation</div>
-    <label for="username">Pick a username <span style="color:var(--accent)">*</span></label><input id="username" maxlength="30" minlength="2" autocomplete="nickname" placeholder="e.g. midnightvisitor" required>
-    <label for="firstMessage">What's on your mind? <span style="color:var(--accent)">*</span></label><textarea id="firstMessage" maxlength="2000" placeholder="Start wherever you want…" required></textarea>
-    <button id="startBtn" style="width:100%">Open chat ↗</button><div id="startStatus" class="status"></div>
+  <div class="welcome">
+    <div class="hero">
+      <div class="eyebrow">A little corner of the internet</div>
+      <h1>The internet has enough bots.<br><span class="green">Talk to someone real.</span></h1>
+      <p class="lead">This is Human GPT. Not an AI, not customer support, not a social network. Just a place to ask Rashed something, share a thought, or start a conversation that goes somewhere unexpected.</p>
+      <div class="promise"><span class="dot"></span> Real conversations, at a human pace <span class="dot"></span> Free to use</div>
+    </div>
+    <div id="startCard" class="card">
+      <div class="card-head"><div class="eyebrow">Come on in</div><span class="pill">✳ open conversation</span></div>
+      <p class="card-note">No perfect opening line needed. Pick a prompt or say whatever's on your mind.</p>
+      <label for="username">What should we call you?</label>
+      <input id="username" maxlength="30" minlength="2" autocomplete="nickname" placeholder="A nickname is perfect" required>
+      <label>Need a place to start?</label>
+      <div class="starters">
+        <button type="button" class="starter" data-prompt="Ask me something unexpected.">Ask me something</button>
+        <button type="button" class="starter" data-prompt="I have a random thought I want to share.">Random thought</button>
+        <button type="button" class="starter" data-prompt="What's something you've been thinking about lately?">Let's talk life</button>
+        <button type="button" class="starter" data-prompt="I want your honest opinion about something.">Get an opinion</button>
+        <button type="button" class="starter" data-prompt="Hey, just wanted to say hello.">Just say hi</button>
+      </div>
+      <label for="firstMessage">Your first message</label>
+      <textarea id="firstMessage" maxlength="2000" placeholder="Start wherever you want. A question, a story, a weird idea…" required></textarea>
+      <button id="startBtn" style="width:100%">Start a conversation <span aria-hidden="true">↗</span></button>
+      <div id="startStatus" class="status"></div>
+    </div>
+  </div>
+  <div class="why">
+    <article><div class="symbol">✳</div><div><b>Actually human</b><span>You're talking to Rashed. Replies happen when he's around.</span></div></article>
+    <article><div class="symbol">↗</div><div><b>No awkward rules</b><span>Ask the strange question. Start with one word. Be yourself.</span></div></article>
+    <article><div class="symbol">⌂</div><div><b>Make yourself at home</b><span>Use a nickname, keep it respectful, and take the conversation at your pace.</span></div></article>
   </div>
   <div id="visitorCard" class="card hidden"><div class="row" style="justify-content:space-between"><div><div class="eyebrow">Your conversation</div><strong id="visitorTitle">Chat</strong></div><span class="pill" id="visitorState">open</span></div>
     <div id="visitorMessages" class="chatbox" aria-live="polite"></div><label for="visitorReply">Your message</label><textarea id="visitorReply" maxlength="2000" placeholder="Write a reply…" style="min-height:75px"></textarea><button id="visitorSend" style="width:100%">Send reply</button><div id="visitorStatus" class="status"></div><button id="newChat" class="linkbtn">Start a new conversation on this device</button>
@@ -39,6 +103,7 @@ const SUPABASE_KEY='sb_publishable_N-vjqS3R3MyhL5kLAPAB0Q_CVo9Talu';
 const FN=SUPABASE_URL+'/functions/v1/human-chat';
 const sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
 const $=id=>document.getElementById(id);let visitorToken=localStorage.getItem('hg_chat_token')||'';let selectedChat='';let poller=null;
+document.querySelectorAll('[data-prompt]').forEach(button=>button.addEventListener('click',()=>{const field=$('firstMessage');field.value=button.dataset.prompt;field.focus();document.querySelectorAll('[data-prompt]').forEach(item=>item.style.borderColor='');button.style.borderColor='var(--accent)'}));
 function status(id,msg,type=''){const el=$(id);el.textContent=msg;el.className='status '+type}
 async function api(action,data={},session=null){const headers={'Content-Type':'application/json','apikey':SUPABASE_KEY};if(session?.access_token)headers.Authorization='Bearer '+session.access_token;const res=await fetch(FN,{method:'POST',headers,body:JSON.stringify({action,...data})});const out=await res.json().catch(()=>({error:'Server response error'}));if(!res.ok)throw new Error(out.error||'Request failed');return out}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
